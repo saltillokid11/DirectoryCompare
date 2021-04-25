@@ -9,8 +9,8 @@ namespace dirCompare
     {
         static void Main(string[] args)
         {
+            //CompareDirectories();
             CompareAllFiles();
-            CompareDirectories();
             //CompareFiles();
         }
 
