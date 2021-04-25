@@ -5,7 +5,6 @@ namespace dirCompare
     {
         public static string[][] ExagoRootDirectory = new string[][] {
                 new[] { "exago", "/Users/tanner/Dev/exago/", "/Users/tanner/Dev/exago2/" },
-                //new[] { "exago", "/Users/tanner/Desktop/trl/compare1", "/Users/tanner/Desktop/trl/compare2" },
         };
 
         public static string[][] ExagoSubRootDirectories = new string[][] {
