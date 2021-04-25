@@ -1,0 +1,15 @@
+/Users/tanner/Dev/dirCompare/dirCompare/bin/Debug/net5.0/dirCompare.deps.json
+/Users/tanner/Dev/dirCompare/dirCompare/bin/Debug/net5.0/dirCompare.runtimeconfig.json
+/Users/tanner/Dev/dirCompare/dirCompare/bin/Debug/net5.0/dirCompare.runtimeconfig.dev.json
+/Users/tanner/Dev/dirCompare/dirCompare/bin/Debug/net5.0/dirCompare.dll
+/Users/tanner/Dev/dirCompare/dirCompare/bin/Debug/net5.0/ref/dirCompare.dll
+/Users/tanner/Dev/dirCompare/dirCompare/bin/Debug/net5.0/dirCompare.pdb
+/Users/tanner/Dev/dirCompare/dirCompare/obj/Debug/net5.0/dirCompare.csprojAssemblyReference.cache
+/Users/tanner/Dev/dirCompare/dirCompare/obj/Debug/net5.0/dirCompare.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tanner/Dev/dirCompare/dirCompare/obj/Debug/net5.0/dirCompare.AssemblyInfoInputs.cache
+/Users/tanner/Dev/dirCompare/dirCompare/obj/Debug/net5.0/dirCompare.AssemblyInfo.cs
+/Users/tanner/Dev/dirCompare/dirCompare/obj/Debug/net5.0/dirCompare.csproj.CoreCompileInputs.cache
+/Users/tanner/Dev/dirCompare/dirCompare/obj/Debug/net5.0/dirCompare.dll
+/Users/tanner/Dev/dirCompare/dirCompare/obj/Debug/net5.0/ref/dirCompare.dll
+/Users/tanner/Dev/dirCompare/dirCompare/obj/Debug/net5.0/dirCompare.pdb
+/Users/tanner/Dev/dirCompare/dirCompare/obj/Debug/net5.0/dirCompare.genruntimeconfig.cache
