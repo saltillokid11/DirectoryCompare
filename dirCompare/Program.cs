@@ -37,7 +37,7 @@ namespace dirCompare
                 int ind = 0;
                 foreach (var path in dir1Files)
                 {
-                    string lastpart = path.Split("/").Last();
+                    string lastpart = path.Split(Path.DirectorySeparatorChar).Last();
                     fileNameDir1.Insert(ind, lastpart);
                     fullPathNameDir1.Insert(ind, path);
                     ind++;
@@ -48,7 +48,7 @@ namespace dirCompare
                 int ind2 = 0;
                 foreach (var path in dir2Files)
                 {
-                    string lastpart = path.Split("/").Last();
+                    string lastpart = path.Split(Path.DirectorySeparatorChar).Last();
                     fileNameDir2.Insert(ind2, lastpart);
                     fullPathNameDir2.Insert(ind2, path);
                     ind2++;
@@ -146,7 +146,7 @@ namespace dirCompare
                 foreach (var v in queryList1Only)
                 {
                     //igore these files
-                    string lastpart = v.FullName.Split("/").Last();
+                    string lastpart = v.FullName.Split(Path.DirectorySeparatorChar).Last();
                     if (v.FullName.Contains(".DS_Store") || lastpart.Length == 38)
                         continue;
 
@@ -166,7 +166,7 @@ namespace dirCompare
                 foreach (var v in queryList2Only)
                 {
                     //igore these files
-                    string lastpart = v.FullName.Split("/").Last();
+                    string lastpart = v.FullName.Split(Path.DirectorySeparatorChar).Last();
                     if (v.FullName.Contains(".DS_Store") || lastpart.Length == 38)
                         continue;
 
