@@ -9,11 +9,11 @@ namespace dirCompare
     {
         static void Main(string[] args)
         {
-            CompareFilesInRoot();
+            CompareAllFiles();
             CompareDirectories();
         }
 
-        public static void CompareFilesInRoot()
+        public static void CompareAllFiles()
         {
             foreach (string[] item in DirPaths.ExagoRootDirectory)
             {
@@ -69,7 +69,7 @@ namespace dirCompare
                         continue;
 
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write("\nFAILURE ");
+                    Console.Write("FAILURE ");
                     Console.ResetColor();
                     Console.WriteLine("The following file exists in " + dirPath1 + " but does NOT in " + dirPath2);
                     Console.ForegroundColor = ConsoleColor.Red;
@@ -97,7 +97,7 @@ namespace dirCompare
                         continue;
 
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Write("\nFAILURE ");
+                    Console.Write("FAILURE ");
                     Console.ResetColor();
                     Console.WriteLine("The following file exists in " + dirPath2 + " but does NOT in " + dirPath1);
                     Console.ForegroundColor = ConsoleColor.Red;
