@@ -11,19 +11,16 @@ namespace dirCompare
         {
             CompareAllFiles();
             CompareDirectories();
+            //CompareFiles();
         }
 
         public static void CompareAllFiles()
         {
             foreach (string[] item in DirPaths.ExagoRootDirectory)
             {
-
-                Console.WriteLine("\n---------CHECKING FILES---------");
                 string dirName = item[0];
                 string dirPath1 = item[1];
                 string dirPath2 = item[2];
-
-                Console.WriteLine("\nCurrently checking all files in " + dirName + ". All files in paths: " + dirPath1 + " and " + dirPath2 + " should match\n");
 
                 IEnumerable<string> dir1Files = Directory
                     .EnumerateFiles(dirPath1, "*", SearchOption.AllDirectories)
