@@ -34,6 +34,8 @@ namespace dirCompare
                 int ind = 0;
                 foreach (var path in dir1Files)
                 {
+                    if (path.Contains("git"))
+                        continue;
                     string lastpart = path.Split(Path.DirectorySeparatorChar).Last();
                     fileNameDir1.Insert(ind, lastpart);
                     fullPathNameDir1.Insert(ind, path);
@@ -45,6 +47,8 @@ namespace dirCompare
                 int ind2 = 0;
                 foreach (var path in dir2Files)
                 {
+                    if (path.Contains("git"))
+                        continue;
                     string lastpart = path.Split(Path.DirectorySeparatorChar).Last();
                     fileNameDir2.Insert(ind2, lastpart);
                     fullPathNameDir2.Insert(ind2, path);
@@ -101,11 +105,12 @@ namespace dirCompare
                     Console.WriteLine(word2);
                     Console.ResetColor();
 
-                    for (int i = 0; i < fileNameDir1.Count; i++)
+                    for (int i = 0; i <= fileNameDir1.Count; i++)
                     {
                         if (fileNameDir2[i].Contains(word2))
                         {
                             Console.WriteLine("possible path " + fullPathNameDir2[i] + "\n");
+                            return;
                         }
                     }
                 }
