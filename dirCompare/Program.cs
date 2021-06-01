@@ -47,7 +47,7 @@ namespace dirCompare
                 int ind2 = 0;
                 foreach (var path in dir2Files)
                 {
-                    if (path.Contains("git") || path.Contains("node_modules"))
+                    if (path.Contains("git") || path.Contains("node_modules") || path.Contains(".vs"))
                         continue;
                     string lastpart = path.Split(Path.DirectorySeparatorChar).Last();
                     fileNameDir2.Insert(ind2, lastpart);
